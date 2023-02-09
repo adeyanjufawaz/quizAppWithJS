@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; 
+    background-color: hsl(199, 93%, 59%);
+}
+#quiz--section{
+    z-index: -2;
+}
+.item{
+    margin: 5px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 10px;
+    
+}
+.btn.active{
+    background-color: rgb(1, 26, 34);
+    color: rgb(167, 232, 235);
+}
+.pagination--container{
+    display: flex;
+    max-width: 700px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.pagination--pages{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0px auto;
+    gap:10px;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(199, 70%, 62%);
+    font-size: 16px;
+    border-radius: 7px;
+    /* font-weight: bold; */
+    text-align: center;
+    width: 37px;
+    height: 37px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#prev,#next,
+#yesSubmit,#noDontSubmit{
+    background-color: hsl(199, 93%, 59%);
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+.submit{
+    margin: 60px auto;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, .75);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 18px;
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 120px;
+    text-align: center;
+}
+.restart{
+    position: absolute;
+    background-color:hsl(199, 93%, 59%);
+    color: #333;
+    font-weight: 600;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border: transparent;
+    transform: translateX(-50%);
+    bottom: 15%;
+    left: 50%;
+}
+.radio{
+    display: block;
+    margin: 10px;
+    position: relative;
+    font-size: 20px;
+} 
+input[type="radio"]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.assurance__segment{
+    background-color:whitesmoke;
+    box-shadow: 0 0 10px 2px;
+    text-align: center;
+    padding: 30px;
+    width: 60%;
+    margin: 10% auto;
+    display: none;
+}
+.YesOrNo--box{
+    display: flex; 
+    width: 90%;
+    margin: 40px auto;
+    justify-content: space-evenly; 
+}
+.result__box{
+    min-height: 300px;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0 0 8px 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Quiz App</h1>
+        <h1 id="time"> <span id="min"></span>:<span id="sec"></span></h1>
+    </div>
+    <main id="quiz--section">
+        <div class="list" id="list"></div>  
+        <div class="pagination--container" id="pagination">
+            <button id="prev">PREV</button>
+            <div class="pagination--pages" id="pages"></div>
+            <button id="next">NEXT</button>
+        </div>
+        <div class="submit" onclick="getAssurance()">Submit</div>
+    </main>
+    <section class="assurance__segment">
+        <div class="flex">
+            <h1>ARE YOU SURE YOU WANT TO SUBMIT</h1>
+        </div>
+        <div class="YesOrNo--box">
+            <button id="yesSubmit" onclick="showResult()">YES</button>
+            <button id="noDontSubmit" onclick="continueQuiz()">NO</button>
+        </div>
+            
+        
+    </section>
+    <section class="result__box">
+        <h2>Good Job</h2><br>
+        <h3 id="result"></h3>
+        <button onclick="restartQuiz()" class="restart">Restart Quiz</button>
+    </section>
+    <script src="coundown.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
